@@ -9,6 +9,18 @@
             return $firebaseArray(ref.orderByChild('roomId').equalTo(roomId));
         };
 
+        //isthiscorrect?
+
+         Message.send = function(newMessage) {
+            messages.push({
+            username:$cookies.currentUser
+            content: newMessage
+            sendAt: Date.now()
+            roomId: roomID
+        });
+        // Send method logic
+    };
+
         return Message;
     }
 
@@ -16,3 +28,5 @@
         .module('projectChat')
         .factory('Message', ['$firebaseArray', Message]);
 })();
+
+//how -Create a controller method that is invoked via ngClick or ngSubmit on the frontend.??!?!?!
