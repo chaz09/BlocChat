@@ -9,5 +9,5 @@
 
 
 angular 
-.module('blocChat')
+.module('projectChat')
 .controller('ModalCtrl', ['Room', '$uibModalInstance', ModalCtrl])
