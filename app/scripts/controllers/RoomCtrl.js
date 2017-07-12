@@ -6,11 +6,11 @@
     $stateProvider
         .state('home', {
             url: '/',
-            controller: 'HomeCtrl as landing',
+            controller: 'HomeCtrl as home',
             templateUrl: '/templates/home.html'
         });
 
     angular
-        .module('blocChat')
+        .module('projectChat')
         .controller('RoomCtrl', ['Room', RoomCtrl]);
 })();

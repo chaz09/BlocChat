@@ -16,6 +16,6 @@
 
     angular
 
-        .module('ProjectChat', ['ui.router', 'firebase'])
+        .module('projectChat', ['ui.router', 'firebase'])
         .config(config);
 })();
