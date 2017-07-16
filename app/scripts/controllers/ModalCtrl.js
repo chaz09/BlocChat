@@ -3,9 +3,9 @@
 
     }
 
-//$uibModalInstance.open()
-//$uibModalInstance.close()
-//$uibModalInstance.submit.data()
+// $uibModalInstance.open()
+// $uibModalInstance.close()
+// $uibModalInstance.submit.data()
 
 
 angular 

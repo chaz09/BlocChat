@@ -11,7 +11,7 @@
         }
         return Room;
     }
-
+//
     angular
         .module('projectChat')
         .factory('Room', ['$firebaseArray', Room]);

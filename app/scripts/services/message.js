@@ -9,17 +9,18 @@
             return $firebaseArray(ref.orderByChild('roomId').equalTo(roomId));
         };
 
-        //isthiscorrect?
-
-         Message.send = function(newMessage) {
+    
+// double heck if roommId is available
+        Message.send = function(newMessage) {
             messages.push({
-            username:$cookies.currentUser
-            content: newMessage
-            sendAt: Date.now()
+            username:$cookies.currentUser,
+            content: newMessage,
+            sendAt: Date.now(),
             roomId: roomID
         });
         // Send method logic
     };
+
 
         return Message;
     }
